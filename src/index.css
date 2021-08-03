@@ -21,17 +21,19 @@ img{
 .app{
   display: grid;
   place-items: center;
-  height: auto;
-  width: 100%;
+  justify-content: center;
+  height: 100%;
+  width: 90%;
   margin: 0 auto 0 auto;
   border-radius: 0  0 20px 20px;
 }
 .bookList{
 max-width: 1080px;
-margin: 0px 20px 20px 20px;
+margin: 0px 20px 3px 20px;
 display: grid;
 grid-template-columns: 1;
 column-gap:50px ;
+height:80%;
 } 
 .Book{
   border-radius: 20px 20px 20px 20px;
@@ -74,4 +76,73 @@ column-gap:50px ;
   overflow-y: auto;
   margin:0px 3px 30px 10px;
   max-width:100%;
+}
+
+
+/* awfweagvfewafewfewfgwefweqfweqqwefd
+qwfqwdw
+
+datawfwa
+f
+awf
+::-webkit-file-upload-buttonwa */
+
+
+
+
+@media screen and (max-width: 700px) {
+  .app{
+    display:flex;
+    /* place-items: center;
+    justify-content: center; */
+  }
+  .Book{
+    background-color: rgb(187, 33, 118);
+    height: 1000px;
+    width: 500px;
+    max-height: 1000px;
+  }
+  .prink {
+    justify-content: center;
+    justify-self: center;
+    border-radius: 0px 20px 20px 0px;
+    display: grid;
+    width: 100%;
+    height:auto;
+    max-width: 1000px;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    /* background-color: rgb(162, 176, 189); */
+    grid-template-columns: 1;
+    grid-template-rows: repeat(3,1fr);
+  }
+  .pics{
+    grid-row:1;
+    height: fit-content;
+    margin: 20px auto 0 auto;
+  }
+  img{
+    image-rendering:optimizeQuality;
+  }
+  .title{
+    margin-top: auto;
+    font-size: large;
+    margin-left: 10px;
+    margin-bottom: auto;
+    border-bottom: 1px solid;
+    grid-row: 2;
+  }
+  .desc{
+    margin-top: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin:0px 3px 30px 10px;
+    max-width:0;
+    width: 80%; 
+    min-width:500px;
+    min-height: 200px;
+    grid-row: 3;
+}
 }

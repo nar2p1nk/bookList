@@ -4,13 +4,15 @@ import data from '../data'
 const Main = () => {
     return (
         <div className='bookList'>
-           {data.map((bookData)=>{
+            {data.map((bookData)=>{
                return(
                    <Book {...bookData}/>
 
-               )
-               
+               ) 
+            
            })}
+
+           {/* <Book {...data[1]}/> */}
         </div>
     )
 }
